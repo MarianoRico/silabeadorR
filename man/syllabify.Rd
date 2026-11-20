@@ -12,3 +12,10 @@ syllabify(w)
 \description{
 Obtiene las sílabas de una palabra usando la librería de Python silabeador
 }
+\examples{
+\dontrun{
+# CRAN ignorará este bloque al compilar el paquete
+install_mis_dependencias()
+syllabify("computadora")
+}
+}

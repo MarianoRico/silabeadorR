@@ -10,7 +10,10 @@ Si uso `exceptions = TRUE` la librería `silabeador` falla. Confío en que se re
 Si uso el paquete R `sylly` (para español `sylly.es`) obtengo peores resultados: (79.858 aciertos para las 106.361 palabras del dataset EDFU), esto es, un 75.082%. 
 
 # Instalación
-`remotes::install_github("MarianoRico/silabeadorR")`
+````
+remotes::install_github("MarianoRico/silabeadorR")
+````
+
 # Uso
 ````
 library(silabeadorR)
