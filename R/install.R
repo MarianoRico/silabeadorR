@@ -2,7 +2,7 @@
 #' Instala la libreria Python desde GitHub
 #'
 #' @export
-install_mis_dependencias <- function() {
+install_py_silabeador <- function() {
   # URL directa al repositorio de GitHub
   github_url <- "git+https://github.com/fsanzl/silabeador"
 
