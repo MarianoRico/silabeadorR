@@ -17,7 +17,7 @@ Obtiene las silabas de una palabra usando la libreria de Python silabeador
 \examples{
 \dontrun{
 # CRAN ignorará este bloque al compilar el paquete
-install_mis_dependencias()
+install_py_silabeador()
 syllabify("computadora")
 }
 }

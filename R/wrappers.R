@@ -6,13 +6,13 @@
 #' @examples
 #' \dontrun{
 #' # CRAN ignorará este bloque al compilar el paquete
-#' install_mis_dependencias()
+#' install_py_silabeador()
 #' syllabify("computadora")
 #' }
 syllabify <- function(w) {
   # Comprobacion de seguridad obligatoria para CRAN (Fallo elegante)
   if (!reticulate::py_module_available("silabeador")) {
-    stop("The python package 'silabeador' is not available in the virtual environment. Run first install_mis_dependencias().", call. = FALSE)
+    stop("The python package 'silabeador' is not available in the virtual environment. Run first install_py_silabeador().", call. = FALSE)
   }
 
   # Se accede usando la variable global definida en zzz.R
