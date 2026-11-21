@@ -1,4 +1,5 @@
-#' Obtiene las sílabas de una palabra usando la librería de Python silabeador
+#' Todo tiene que ser ASCII para ser aceptado en CRAN.
+#' Obtiene las silabas de una palabra usando la libreria de Python silabeador
 #'
 #' @param w Una cadena (character string) que representa la palabra a silabear.
 #' @export
@@ -9,9 +10,9 @@
 #' syllabify("computadora")
 #' }
 syllabify <- function(w) {
-  # Comprobación de seguridad obligatoria para CRAN (Fallo elegante)
+  # Comprobacion de seguridad obligatoria para CRAN (Fallo elegante)
   if (!reticulate::py_module_available("silabeador")) {
-    stop("El módulo 'silabeador' no está disponible. Ejecuta install_mis_dependencias() primero.", call. = FALSE)
+    stop("The python package 'silabeador' is not available in the virtual environment. Run first install_mis_dependencias().", call. = FALSE)
   }
 
   # Se accede usando la variable global definida en zzz.R
