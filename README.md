@@ -17,5 +17,5 @@ remotes::install_github("MarianoRico/silabeadorR")
 # Uso
 ````
 library(silabeadorR)
-syllabify("murciélago") #Debe devolver `"mur-cié-la-go"`
+syllabify("murciélago") #Debe devolver "mur-cié-la-go"
 ````
