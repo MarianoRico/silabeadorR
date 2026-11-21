@@ -2,7 +2,8 @@
 % Please edit documentation in R/wrappers.R
 \name{syllabify}
 \alias{syllabify}
-\title{Obtiene las sílabas de una palabra usando la librería de Python silabeador}
+\title{Todo tiene que ser ASCII para ser aceptado en CRAN.
+Obtiene las silabas de una palabra usando la libreria de Python silabeador}
 \usage{
 syllabify(w)
 }
@@ -10,7 +11,8 @@ syllabify(w)
 \item{w}{Una cadena (character string) que representa la palabra a silabear.}
 }
 \description{
-Obtiene las sílabas de una palabra usando la librería de Python silabeador
+Todo tiene que ser ASCII para ser aceptado en CRAN.
+Obtiene las silabas de una palabra usando la libreria de Python silabeador
 }
 \examples{
 \dontrun{

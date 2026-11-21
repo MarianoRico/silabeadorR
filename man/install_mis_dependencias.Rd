@@ -2,7 +2,8 @@
 % Please edit documentation in R/install.R
 \name{install_mis_dependencias}
 \alias{install_mis_dependencias}
-\title{Instala la librería Python desde GitHub}
+\title{Todo tiene que ser ASCII para ser aceptado en CRAN.
+Instala la librería Python desde GitHub}
 \usage{
 install_mis_dependencias(envname = "r-reticulate")
 }
@@ -10,5 +11,6 @@ install_mis_dependencias(envname = "r-reticulate")
 \item{envname}{Nombre del entorno virtual. Por defecto "r-reticulate".}
 }
 \description{
+Todo tiene que ser ASCII para ser aceptado en CRAN.
 Instala la librería Python desde GitHub
 }
