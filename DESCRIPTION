@@ -1,5 +1,5 @@
 Package: silabeadorR
-Title: R Wrapper for Python Package silabeador
+Title: R Wrapper for Python Package Silabeador
 Version: 0.1
 Authors@R: 
     person("Mariano", "Rico", , "mariano.rico@upm.es", role = c("aut", "cre"))
