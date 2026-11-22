@@ -13,6 +13,18 @@ Si uso el paquete R `sylly` (para español `sylly.es`) obtengo peores resultados
 ````
 remotes::install_github("MarianoRico/silabeadorR")
 ````
+Como una sesión de R solo puede usar un entorno virtual python, hay que saber si 
+alguno de los paquetes que vamos a usar en nuestro código usa algún entorno virtual
+python. Por ejemplo, el paquete `spacyr` usa el entorno virtual `r-spacyr`, por lo que, 
+si queremos usar el paquete R `silabeadorR` junto con el paquete R `spacyr`, deberemos
+decirle a `silabeadorR` que use el entorno virtual `r-spacyr`:
+
+````
+silabeadorR::install_py_silabeador(envname = "r-spacyr")
+````
+
+Si no le indicamos ningún entorno virtual, el paquete R `silabeadorR` creará el 
+entorno virtual `r-reticulate` 
 
 # Uso
 ````
