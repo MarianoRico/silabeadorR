@@ -15,20 +15,22 @@ remotes::install_github("MarianoRico/silabeadorR")
 ````
 Como una sesión de R solo puede usar un entorno virtual python, hay que saber si 
 alguno de los paquetes que vamos a usar en nuestro código usa algún entorno virtual
-python. Por tanto:
+python. Por tanto, hay que tener claro si queremos la opción A o la opción B:
 
-A) Vamos a usar un entorno virtual python ya existente. Por ejemplo, el 
+Opción A) Vamos a usar un entorno virtual python ya existente. Por ejemplo, el 
 paquete `spacyr` usa el entorno virtual `r-spacyr`, por lo que, 
 si queremos usar el paquete R `silabeadorR` junto con el paquete R `spacyr`, deberemos
-decirle a `silabeadorR` que use el entorno virtual `r-spacyr`:
+decirle a `silabeadorR` que use el entorno virtual `r-spacyr` con este código:
 
 ````
 reticulate::use_virtualenv("r-spacyr", required = TRUE)
 silabeadorR::install_py_silabeador(envname = "r-spacyr")
 ````
 
-B) Si no le indicamos ningún entorno virtual, el paquete R `silabeadorR` creará el 
-entorno virtual `r-reticulate` y meterá ahí el paquete python `silabeador`:
+Opción B) No vamos a usar un entorno virtual python ya existente. Si no le 
+indicamos ningún entorno virtual, el paquete R `silabeadorR` creará el 
+entorno virtual `r-reticulate` y meterá ahí el paquete python `silabeador`. El código 
+que ejecutaremos es este:
 
 ````
 silabeadorR::install_py_silabeador()
