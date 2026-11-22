@@ -38,7 +38,7 @@ silabeadorR::install_py_silabeador()
 
 ## Finaliza la instalación
 Observa que al final de la instalación se muestra un mensaje que pide reiniciar la sesión de R. 
-En RStudio es Session --> Restart R (Ctrl+Mayús+F10).
+Desde RStudio teclea: Session --> Restart R (Ctrl+Mayús+F10).
 
 # Uso
 ````
